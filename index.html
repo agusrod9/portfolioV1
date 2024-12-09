@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300" >
+    <title>Agustín Rodríguez</title>
+</head>
+<body>
+    <header class="header">
+        <input type="checkbox" id="open-menu" class="header__checkbox">
+        <label for="open-menu" class="header__open-nav-button" role="button">=</label>
+        <div class="header__logo-container">
+            <img class="header__logo" src="./public/images/file.png" alt="logo web">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="#profile">About</a></li>
+                <li class="header__nav-item"><a href="#portfolio">Portfolio</a></li>
+                <li class="header__nav-item"><a href="#contact">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main class="profile" id="profile">
+        <div class="profile__wrapper">
+            <div class="profile__img-container">
+                <img src="./public/images/cv_b&n_square.jpg" alt="imágen Agustín" class="profile__img">
+            </div>
+            <div class="profile__data-container">
+                <div class="profile__data">
+                    <div class="profile__description">
+                        <h1>Agustín Rodríguez</h1>
+                        <h5 class="profile__career">Web Developer</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo porro optio consequuntur laborum earum dolor, aperiam quod distinctio, quaerat error modi nemo officia nesciunt sit doloremque vero at itaque facilis?</p>
+                    </div>
+                    <div class="profile__skills-container">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--80">80%</div>
+                                </div>
+                                <span class="profile__skill-name">HTML</span>
+                            </li>
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--70">70%</div>
+                                </div>
+                                <span class="profile__skill-name">CSS</span>
+                            </li>
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--90">90%</div>
+                                </div>
+                                <span class="profile__skill-name">JS</span>
+                            </li>
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--80">80%</div>
+                                </div>
+                                <span class="profile__skill-name">SQL</span>
+                            </li>
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--60">60%</div>
+                                </div>
+                                <span class="profile__skill-name">React</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="portfolio">
+        <h2 class="portfolio__title" id="portfolio">Projects</h2>
+        <div class="portfolio__project-container">
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">Project 1</h2>
+            </div>
+            <div class="portfolio__project">
+                <a href="https://agusrod9-giifle.netlify.app/"><h2 class="portfolio__project-name">Giifle</h2><p>Una especie de google para buscar Gifs.</p><p>Utiliza la api de Giffy</p></a>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">Project 3</h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">Project 4</h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">Project 5</h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">Project 6</h2>
+            </div>
+        </div>
+    </section>
+    <section class="form">
+        <h2 class="form__title" id="contact">Contact</h2>
+        <form class="form__form">
+            <div class="form__input-container">
+                <label for="label__name">Nombre
+                    <input type="text" placeholder="John">
+                </label>
+            </div>
+            <div class="form__input-container">
+                <label for="label__lastname">Apellido
+                    <input type="text" placeholder="Doe">
+                </label>
+            </div>
+            <div class="form__input-container">
+                <label for="label__email">E-mail
+                    <input type="email" placeholder="johndoe@mail.com">
+                </label>
+            </div>
+            <div class="form__input-container">
+                <label for="label__message">Mensaje
+                    <textarea placeholder="Escriba su mensaje..."></textarea>
+                </label>
+            </div>
+            <div class="form__input-container">
+                <input type="submit" id="button">
+            </div>
+        </form>
+    </section>
+    <footer class="footer">
+        <p>Agustín Rodríguez © 2026</p>
+    </footer>
+</body>
+</html>
